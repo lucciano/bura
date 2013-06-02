@@ -12,6 +12,14 @@ class GroupsDaemon{
 		}
 */
 	}
+
+	function addCurrentVisitor($group,$token){
+
+	}
+
+	function removeVisitor($token){
+
+	}
 }
 
 ?>

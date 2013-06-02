@@ -101,11 +101,12 @@ define("BURA_ABS_TEMPLATE_PATH", BURA_TEMPLATES_DIR.$template_name.'/');
 define("BURA_TEMPLATE_PATH", $conf->getOptionValue('siteurl').'/'.str_replace(BURA_SOURCE_DIR,'',BURA_TEMPLATES_DIR).$template_name.'/');
 
 $template->tplLoad(BURA_TEMPLATES_DIR.BURA_DEFAULT_TEMPLATE.'/layouts/'.$layout.'/framework.tpl', $skeleton);
-$template->tplCompile($skeleton,$skeleton);
 
 // Javascript load test
 $template->tplAddToJSQueue("jQuery","http://code.jquery.com/jquery-2.0.0.min.js");
 $template->tplAddToJSQueue("ajaxForm",BURA_JS_DIR.'ajaxForm.js');
+
+$template->tplCompile($skeleton,$skeleton);
 
 if(defined('BURA_TESTING_MODE')){
 	require_once BURA_CONF_DIR.'dev-tools/checklibs.php';

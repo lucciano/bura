@@ -28,6 +28,83 @@
 		overflow-y: none !important;
 	}
 
+.form-signin input[type="text"],
+      .form-signin input[type="password"] {
+        font-size: 16px;
+        height: auto;
+        margin-bottom: 15px;
+        padding: 7px 9px;
+      }
+
+.widget-box{
+border: 1px solid #e5e5e5;
+padding:5px;
+margin-bottom:10px;
+width:100%;
+}
+.form-signin-heading h3{
+	padding-top:0 !important;
+	margin-top:0 !important;
+}
+
+.widget-comment{
+	border-top: 1px solid #e5e5e5;
+	margin-bottom:10px; 
+}
+.widget-topic{
+	opacity:0.9;
+	min-height:70px !important;
+	padding-top:10px;
+}
+.widget-topic:hover{
+	opacity:1;
+}
+.widget-topic img{
+	margin-right:5px;
+}
+h3 {
+	margin:0 !important;
+	padding:0 !important;
+}
+
+.widgets-center-down-framework{
+	margin-top:20px;
+}
+a {
+	color:#58A000;
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus{
+	background:#58A000;
+}
+
+.nav .dropdown-toggle .caret {
+    border-bottom-color: #58A000;
+    border-top-color:#4D8C00;
+    margin-top: 6px;
+}
+
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  background-color: #DEF2C6;
+  color:#000;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+background: #cdeb8e; /* Old browsers */
+background: -moz-linear-gradient(top,  #cdeb8e 0%, #a5c956 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #cdeb8e 0%,#a5c956 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #cdeb8e 0%,#a5c956 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+color:#fff;
+}
 
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -41,8 +118,8 @@
     <div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
-			<h1>{WEB_NAME}</h1>
-			<h2>{WEB_SLOGAN}</h2>
+			<h1>Lutnix</h1>
+			<h2>Laboratorio de Software Libre @UTN-FRRO</h2>
 		</div>
 	</div>
 	<div class="row-fluid">
@@ -57,66 +134,178 @@
     <div class="row-fluid">
 		<div class="span12">
 <ul class="nav nav-pills">
-              <li class="active"><a href="#">Home</a></li>
+              <li class="active"><a href="#">Inicio</a></li>
               <li class="dropdown">
-                <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">About us <b class="caret"></b></a>
+                <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Proyectos <b class="caret"></b></a>
                 <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Who are we</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">What we do</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Contact</a></li>
-                  <li class="divider" role="presentation"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Tell me more</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Interesting stuff <b class="caret"></b></a>
-                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Alternatives DB</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Our open library</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Our projects <b class="caret"></b></a>
-                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
                   <li role="presentation"><a href="#" tabindex="-1" role="menuitem">LTSP</a></li>
                   <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Bura</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Other</a></li>
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Observatorio</a></li>
+                  <li class="divider" role="presentation"></li>
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Más proyectos</a></li>
                 </ul>
               </li>
+              <li class="dropdown">
+                <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Acerca de <b class="caret"></b></a>
+                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">¿Quiénes somos?</a></li>
+                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">¿Qué hacemos?</a></li>
+                </ul>
+              </li>
+              <li><a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Contacto</a></li>
             </ul>
 		</div>
     </div>
     <div class="row-fluid">
-    <div class="span12 aficionado-content">
-		<div class="alert alert-block alert-error fade in">
-			<button data-dismiss="alert" class="close" type="button">×</button>
-			<h4 class="alert-heading">Hey you!</h4>
-			<p>This is the first time you are running Bura, and you still didn't set your package repository.</p>
-			<p><a href="#" class="btn btn-danger">Choose now</a> <a href="#" class="btn">Admin pannel</a></p>
+    <div class="span2">
+<div class="widget-box">
+<h3>Menu</h3>
+    <ul class="nav nav-pills nav-stacked">
+	<li class="active"><a href="#">Inicio</a></li>
+	<li><a href="#">Noticias</a></li>
+	<li><a href="#">Foro</a></li>
+	<li><a href="#">Wiki</a></li>
+	<li><a href="#">Biblioteca</a></li>
+    </ul>
+</div>
+
+
+<div class="widget-box">
+<h3>Enlaces</h3>
+    <ul class="nav nav-pills nav-stacked">
+	<li><a href="#">Kernel</a></li>
+	<li><a href="#">Google</a></li>
+	<li><a href="#">UTN</a></li>
+	<li><a href="#">GitHub</a></li>
+	<li><a href="#">Bura</a></li>
+    </ul>
+</div>
+
+</div>
+    <div class="span8 aficionado-content">
+		<h3 class="main-title">Categorías</h3>
+		<div class="row-fluid"><div class="span4 widget-box widget-topic"><img src="img/bura/devel-tools.png" />Desarrollo</div>	<div class="span4 widget-box widget-topic"><img src="img/bura/ubuntu.png" />Ubuntu</div><div class="span4 widget-box widget-topic"><img src="img/bura/debian.png" />Debian</div></div>
+	<div class="row-fluid"><div class="span4 widget-box widget-topic"><img src="img/bura/freebsd.png" />BSD</div>	<div class="span4 widget-box widget-topic"><img src="img/bura/fedora.png" />Fedora</div><div class="span4 widget-box widget-topic"><img src="img/bura/gentoo.png" />Gentoo</div></div>
+
+<div class="row-fluid" align="right">    <div class="btn-group dropup" align="left">
+    <button class="btn">Más</button>
+    <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+	<li><a href="#">Otra</a></li>
+	<li><a href="#">Otra</a></li>
+	<li><a href="#">Otra</a></li>
+    </ul>
+    </div></div>
+<div class="row-fluid widgets-center-down-framework">
+	<div class="span5">
+		<div class="widget-box">
+			<h3>Encuesta</h3>
+			<input type="radio" name="opt" /> Opción 1 <br/>
+			<input type="radio" name="opt" /> Opción 2 <br/>
+			<input type="radio" name="opt" /> Opción 3 <br/>
+
+			<div align="right">
+				<button class="btn-success btn-small btn-primary" type="submit">Votar</button>
+			</div>
 		</div>
 
-		<div class="alert alert-block alert-success fade in">
-			<button data-dismiss="alert" class="close" type="button">×</button>
-			<h4 class="alert-heading">Congratulations!</h4>
-			<p>Bura has been installed successfully in your system!.</p>
-			<p><a href="#" class="btn btn-success">Log in</a> <a href="#" class="btn">Tell me more</a></p>
-		</div>
 
-		<div class="alert alert-block alert-info fade in">
-			<button data-dismiss="alert" class="close" type="button">×</button>
-			<h4 class="alert-heading">Psss!</h4>
-			<p>You should now remove the install.php file from your root directory.</p>
-			<p><a href="#" class="btn btn-info">Try to do it manually</a> <a href="#" class="btn">Tell me more</a></p>
-		</div>
+<div class="widget-box">
+	<h3>Próximos eventos</h3>
+	<small><strong>Evento I</strong><br/>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small><br/>
+	<div align="right">
+		<a href="#">Ver</a>
+	</div>
+	<small><strong>Evento I</strong><br/>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small><br/>
+	<div align="right">
+		<a href="#">Ver</a>
+	</div>
+	<small><strong>Evento I</strong><br/>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small><br/>
+	<div align="right">
+		<a href="#">Ver</a>
+	</div>
+</div>
 
-		<h2>Welcome to Bura!</h2>
-		<p>This is an example page.</p>
+	</div>
+	<div class="span7">
+		<div class="widget-box">
+			<h3>Noticias</h3>
+			<div class="widget-blog-entry">
+				<h4>Título I</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. </p>
+				<div align="right"><a href="#">Ver</a></div>
+			</div>
+			<hr />
+			<div class="widget-blog-entry">
+				<h4>Título II</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. </p>
+				<div align="right"><a href="#">Ver</a></div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
     </div>
+	<div class="span2">
+
+<div class="widget-box">
+      <form class="form-signin">
+        <h3 class="form-signin-heading">Ingresar</h3>
+        <input type="text" class="input-block-level" placeholder="Email address">
+        <input type="password" class="input-block-level" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn-success btn-small btn-primary" type="submit">Entrar</button>
+      </form>
+</div>
+
+<div class="widget-box">
+	<h3>Comentarios</h3>
+
+	<div class="widget-comment">
+		<smal>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small>
+		<div align="right"><a href="#">Milardo</a> en <a href="#">Articulo I</a></div>
+	</div>
+
+	<div class="widget-comment">
+		<smal>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small>
+		<div align="right"><a href="#">Juan</a> en <a href="#">Articulo I</a></div>
+	</div>
+
+	<div class="widget-comment">
+		<smal>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small>
+		<div align="right"><a href="#">Ale</a> en <a href="#">Articulo I</a></div>
+	</div>
+</div>
+
+<div class="widget-box">
+	<h3>Foro</h3>
+
+	<div class="widget-comment">
+		<smal>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small>
+		<div align="right"><a href="#">Milardo</a> en <a href="#">Post I</a></div>
+	</div>
+
+	<div class="widget-comment">
+		<smal>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small>
+		<div align="right"><a href="#">Juan</a> en <a href="#">Post I</a></div>
+	</div>
+
+	<div class="widget-comment">
+		<smal>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</small>
+		<div align="right"><a href="#">Ale</a> en <a href="#">Post I</a></div>
+	</div>
+</div>
+	</div>
 
     </div>
     </div>
     <div class="row-fluid" align="center">
-	<div class="span12">This program is Free Software</div>
+	<div class="span12">Este sitio fue desarrollado usando <a href="#">Bura</a>, un gestor de contenidos de código abierto. Todo el contenido de este sitio (a excepción que se detalle algo distinto) está publicado bajo licencia <a href="#">Creative Commons</a>.<br/>Funciona mejor con <a href="#">Firefox</a> y <a href="#">Linux</a> ;).</div>
     </div>
 
 

@@ -35,8 +35,8 @@
 		<div class="container-fluid">
 			<div class="row-fluid">
 				<div class="span12">
-					<h1>{WEB_NAME}</h1>
-					<h2>{WEB_SLOGAN}</h2>
+					<h1>{=conf(web_name)}</h1>
+					<h2>{=conf(web_slogan)}</h2>
 				</div>
 			</div>
 			<div class="container">

@@ -133,8 +133,10 @@ foreach($active_apps->activeApps as $active_app){
 		require_once BURA_APPS_DIR.$active_app->path.'/models/extra.php';
 		if(is_array($extra_libs)){
 			foreach($extra_libs as $extra_lib => $libfile){
-				require_once BURA_APPS_DIR.$active_app->path."/models/".$libfile;
-				eval("\$$extra_lib = Extra::loadLib(ucfirst($extra_lib));");
+				if(file_exists(BURA_APPS_DIR.$active_app->path."/controllers/".$libfile)){
+					require_once BURA_APPS_DIR.$active_app->path."/controllers/".$libfile;
+					eval("\$$extra_lib = Extra::loadLib(ucfirst($extra_lib));");
+				}
 			}
 		}
 	}

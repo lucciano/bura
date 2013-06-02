@@ -1,9 +1,9 @@
 <?php
-/*
+
 	$extra_libs = array(
-		"ClassA" => "classA.php",
-		"ClassB" => "classB.php"
+		"GroupsDaemon" => "sentinel.php",
+		"GroupsManagement" => "groups.lib.php"
 	); 
 
-*/
+
 ?>

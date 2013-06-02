@@ -1,0 +1,64 @@
+TODO:
+
+- bootstrap default theme [OK]
+
+- default icons theme [OK]
+
+- template.lib.php:
+	- {include} [OK]
+	- {conf} [OK]
+	- {if} [OK]
+	- {for}
+	- {foreach}
+
+
+- pacman.lib.php
+	- downloadPackage() [OK]
+	- unzipPackage() [OK]
+	- searchPackage() [OK]
+	- addRepo() [OK]
+	- searchUpdates() [LATER]
+	- listPackages() [LATER]
+
+- define package.xml structure [OK]
+
+
+- permalinks.lib.php
+
+- sentinel @/etc/conf.php
+	- check tmp
+	- check libs /cURL,PHP-zip,getText,etc. [OK]
+
+- package.lib.php
+	- checkDependences() [OK]
+	- loadLocale()
+	- installPackage()
+	- uninstallPackage() // deletes DB but not files
+	- purgePackage() // deletes DB AND files
+	- updatePackage()
+	- checkVersion()
+
+- default DB model
+	- default groups DB model
+		- apps/groups
+	- default categories DB model
+		- apps/categories
+
+- backend TPL files [OK]
+
+- basic login system
+	- apps/users
+
+- define apps structure [OK]
+
+- create example app [OK]
+
+- widgets.lib.php
+
+- apps/blog
+- apps/wiki
+- apps/pages
+- apps/events
+- apps/contact
+- lib/cache.lib.php
+- zlib compression for template.lib.php

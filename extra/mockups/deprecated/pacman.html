@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Pacman mockup</title>
+		<link href="css/960.css" media="screen" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			body { background-color: #fff; font-family:Helvetica; }
+			.container div p { background-color:#fff; }
+			div p { border-bottom:1px solid #333; padding:10px; }
+			div p:hover { border-color:#000; }
+			.menu{
+				opacity:0.8;
+			}
+			.menu:hover{
+				-moz-border-radius:5px;
+				border-radius:5px;
+				opacity:1;
+				background:#FFF2F2;
+				color:#000;
+				cursor:pointer;
+			}
+			select, input {
+				border:1px solid #333;
+				padding:5px;
+				font-size:12px;
+				border-radius-topright:5px;
+				border-radius-bottomright:5px;
+				min-width:125px;
+				margin-left:40px;
+				background:#FFFFFF;
+			}
+			.searchinput{
+				background:url(img/search-small.png) left no-repeat;
+				padding-left:25px;
+				background-position:5px;
+			}
+			.pacman_content{
+				font-size:10px;
+				margin-bottom:10px;
+			}
+			.pacman_content p{
+				font-size:16px;
+			}
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+			a:hover{
+				color:#AF6262;
+			}
+			.pacman_package{
+				opacity:0.8;
+				padding-top:5px;
+			}
+			.pacman_package:hover{
+				opacity:1;
+				background:#FFF2F2;
+			}
+			.pacman_topics{
+				font-size:12px;
+			}
+			.pacman_topics li{
+				display:block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container container_12">
+			<h2 class="grid_12">
+				Bura testing template
+			</h2>
+			<h3 class="grid_12">
+				Let the code blow
+			</h3>
+			<div class="grid_12">
+				<p style="border:0;">
+					Aloha <a href="#">Admin</a>! <input class="searchinput" type="text" value="Go to" />
+				</p>
+				<div class="grid_1 menu" style="padding:5px;text-align:center;font:Helvetica;font-size: 12px;">Website</div>
+				<div class="grid_1 menu" style="padding:5px;text-align:center;font:Helvetica;font-size: 12px;">Apps</div>
+				<div class="grid_1 menu" style="padding:5px;text-align:center;font:Helvetica;font-size: 12px;">Goodies</div>
+				<div class="grid_1 menu" style="padding:5px;text-align:center;font:Helvetica;font-size: 12px;">Support</div>
+			</div>
+			<div class="grid_12">
+				<p> <img src="img/archive.png" align="absmiddle" /> Package Manager </p>
+			</div>
+			
+			<div class='clear'>&nbsp;</div>
+			<div class="grid_3">
+				<p>Topics</p>
+				<div class='clear'>&nbsp;</div>
+				<ul class="pacman_topics">
+					<li>Apps <ul>
+						<li>Social networks</li>
+						<li>Development</li>
+						<li>Content Management</li>
+					</ul></li>
+					<li>Themes <ul>
+						<li>Portal</li>
+						<li>Blog</li>
+						<li>Minimalistic</li>
+						<li>Creative</li>
+					</ul></li>
+					<li>Widgets <ul>
+						<li>Social networks</li>
+						<li>Content Management</li>
+						<li>Others</li>
+					</ul></li>
+				</ul>
+				<p>Filter:</p>
+				Repository: <br/>
+				<select name="repos"><option name="test" disabled>Select a repository...</option><option>Main</option><option>UTN</option><option>MIT</option></select><br/>
+				Order by: <br/>
+				<select name="order"><option disabled>Sort by...</option><option>A-Z</option><option>Random</option></select><br/>
+				Show only: <br/>
+				<select name="order"><option disabled>Ahow only...</option><option>Installed</option><option>Activated</option><option>Not installed</option><option>New</option><option>Update avaliable</option></select>
+				
+			</div>
+			<div class="grid_9 pacman_content">
+				<p>Local packages</p>
+			</div>
+			<div class="grid_9 pacman_content">
+				<div class='clear'>&nbsp;</div>
+				<div class="grid_1">Icon</div>
+				<div class="grid_2">Name</div>
+				<div class="grid_1">Version</div>
+				<div class="grid_1">Author</div>
+				<div class="grid_3">Description</div>
+				<div class="grid_1">Actions</div>
+
+				<div class='clear'>&nbsp;</div>
+			</div>
+			<div class="grid_9 pacman_content pacman_package">
+
+				<div class="grid_1 pacman_icon"><img src="img/groups.png" /></div>
+				<div class="grid_2">Groups</div>
+				<div class="grid_1">0.1</div>
+				<div class="grid_1">Sergio Milardovich</div>
+				<div class="grid_3">This is a simple groups web app for Bura CMS.</div>
+				<div class="grid_1 pacman_actions"> <img src="img/pacman-activate.png" /> <img src="img/pacman-active.png" /> <img src="img/pacman-active.png" /> </div>
+
+				<div class='clear'>&nbsp;</div>
+			</div>
+
+			<div class="grid_9 pacman_content pacman_package">
+
+				<div class="grid_1 pacman_icon"><img src="img/blog.png" /></div>
+				<div class="grid_2">Blog</div>
+				<div class="grid_1">0.1</div>
+				<div class="grid_1">Sergio Milardovich</div>
+				<div class="grid_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.</div>
+				<div class="grid_1 pacman_actions"> <img src="img/pacman-shutdown.png" /> <img src="img/pacman-remove.png" /></div>
+
+			</div>
+			<div class="grid_12">
+				<p align="center" style="font-size:10px;font:Helvetica;border:0;">
+					Copyright (c) 2013 Bura content management system - All right reserved. <br/> This site is <a href="https://bura-cms.googlecode.com/" title="Powered by Bura">Bura powered</a>. Bura is free software realeased under the <a href="http://www.gnu.org/copyleft/gpl.html" title="GNU/GPL licenced">GNU/GPL</a> licence terms.
+				</p>
+			</div>
+			<div class='clear'>&nbsp;</div>
+		</div>
+	</body>
+</html>
+

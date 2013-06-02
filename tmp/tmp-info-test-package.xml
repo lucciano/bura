@@ -1,0 +1,14 @@
+<?xml version='1.0'?>
+<package name="test-package">
+	<current-version>0.1</current-version>
+	<author>Sergio Milardovich «sergio.milardovich@gmail.com»</author>
+	<description>blah blah blah</description>
+	<dependences>
+		<package name="package1">
+			<version>>=0.1</version>
+		</package>
+		<package name="package2">
+			<version>0.2</version>
+		</package>
+	</dependences>
+</package>

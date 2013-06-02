@@ -1,0 +1,8 @@
+<package name="humanity-icon-theme">
+	<version>0.1</version>
+	<author>Elias Martinez Kafel «eliasmartinezkafel@gmail.com»</author>
+	<description>Elementary Icons for Humans.</description>
+	<credits>
+		<url name="Launchpad">https://launchpad.net/humanity</url>
+	</credits>
+</package>

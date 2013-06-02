@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link href="css/960.css" media="screen" rel="stylesheet" type="text/css" />
+		<style type="text/css">
+			body { background-color: #fff; }
+			.container div p { background-color:#fff; }
+			div p { border:1px solid #333; padding:10px; }
+			.grid_8{
+				padding-top:11px;
+			}
+			.form_buttons{
+				text-align:right;
+			}
+			input{
+				border:1px solid #333;
+				width:98%;
+				font-size:16px;
+				margin-bottom:10px;
+				padding:1%;
+				opacity:0.8;
+			}
+			input:hover{
+				opacity:1;
+				border:1px solid #000;
+			}
+			input:focus{
+				opacity:0.9;
+				border:1px solid #1E1E1E;
+			}
+			button{
+				border:1px solid #333;
+				background:#fff;
+				padding:5px;
+				font-size:16px;
+				opacity:0.8;
+			}
+			button:hover{
+				opacity:1;
+				border:1px solid #000;
+			}	
+			button img{
+				padding-right:5px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container container_12">
+			<h2 class="grid_12">
+				{WEB_NAME}
+			</h2>
+			<h3 class="grid_12">
+				{WEB_SLOGAN}
+			</h3>
+			<div class="grid_12">
+				<p>
+					TOP WIDGETS
+				</p>
+			</div>
+			
+			<div class='clear'>&nbsp;</div>
+			<div class='grid_2'>
+				<p>LEFT_WIDGETS</p>
+			</div>
+			<div class='grid_8'>
+				<fieldset id="login">
+					<legend accesskey="l">Login form</legend>
+					<label>
+						Username:
+					</label>
+					<input type="text" name="user" /> <br/>
+					<label>
+						Password:
+					</label>
+					<input type="password" name="password" /> <br/>
+					<div class="form_buttons">
+						<button class="form_submit"><img align="absmiddle" src="img/users_small.png" />Log in</button>
+					</div>
+				</fieldset>
+			</div>
+			<div class='grid_2'>
+				<p>RIGHT WIDGETS</p>
+			</div>
+			<div class='clear'>&nbsp;</div>
+			<div class="grid_12">
+				<p>
+					FOOTER
+				</p>
+			</div>
+			<div class='clear'>&nbsp;</div>
+		</div>
+	</body>
+</html>
+

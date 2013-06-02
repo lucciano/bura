@@ -1,0 +1,23 @@
+- apps
+	- catM
+		- packageN
+			- package-info.xml
+			- trunk
+				- package.xml
+			- versionN
+
+
+package-info.xml
+<package name="example">
+	<current-version>0.1</version>
+	<author>Sergio Milardovich «sergio.milardovich@gmail.com»</author>
+	<description>blah blah blah</description>
+	<dependences>
+		<package name="package1">
+			<version>>=0.1</version>
+		</package>
+		<package name="package2">
+			<version>0.2</version>
+		</package>
+	</dependences>
+</package>

@@ -1,0 +1,11 @@
+- appman.lib.php
+	- loadApp($app)
+		- Package::checkDependences()
+		0- Check app status
+		1- Load model
+			1.1 - Check if constants.php exists
+		2- Load locale files
+		3- Load controller
+
+	- activateApp()
+	- disableApp()

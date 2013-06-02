@@ -1,0 +1,9 @@
+############################################################################################################
+#					   								   #
+# This is an extra log for BuraCMS	   								   #
+# Here you will find some non-technical facts or technical-facts which aren't in the SVN log	 	   #
+#					   								   #
+############################################################################################################
+
+[30-05-2013]
+- Changed base development to MariaDB

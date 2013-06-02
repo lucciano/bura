@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Aficionado - Package Manager</title>
+    <title>Aficionado - home page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -29,6 +29,24 @@
 		overflow-y: none !important;
 	}
 
+	.bura-admin-icon img{
+		float:left;
+	}	
+
+	.bura-admin-icon{
+		min-height:70px !important;
+		text-align:center;
+		padding:5px;
+		padding-top:10px;
+		cursor:pointer;
+border-radius: 4px 4px 4px 4px;
+	}
+	.bura-admin-icon:hover{
+  text-decoration: none;
+  background-color:#93AA77;
+  color:#fff;
+	}
+
 
     </style>
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -39,7 +57,7 @@
 
   <body>
 
-    <div class="container-fluid">
+<div class="container-fluid">
 	<div class="row-fluid">
 		<div class="span12">
 			<h1>{WEB_NAME}</h1>
@@ -50,95 +68,65 @@
 		<div class="span12">
   <!-- NAVBAR
     ================================================== -->
-    <div class="navbar-wrapper">
-      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
-      <div class="container">
-
-
-    <div class="row-fluid">
-		<div class="span12">
-<ul class="nav nav-pills">
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Actions <b class="caret"></b></a>
-                <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Update all</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Resolve dependences</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Filter <b class="caret"></b></a>
-                <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Apps</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Themes</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Plugins</a></li>
-                  <li class="divider"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Show all</a></li>
-                </ul>
-              </li>
-            </ul>
-		</div>
-    </div>
-    <div class="row-fluid">
-    <div class="span12 aficionado-content">
-
-
-		<h2>Package manager</h2>
+			<div class="navbar-wrapper">
+			<!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+				<div class="container">
+					<div class="row-fluid">
+						<div class="span12">
+							<h2>Groups editor</h2>
 <table class="table table-bordered table-striped">
             <thead>
              <tr>
                <th style="width: 10px;">S</th>
-               <th style="width: 100px;">Package</th>
-               <th style="width: 50px;">Installed</th>
-               <th style="width: 50px;">Latest</th>
+               <th style="width: 50px;">Action</th>
+               <th style="width: 50px;">Modified</th>
                <th>description</th>
              </tr>
             </thead>
             <tbody>
              <tr>
                <td><input type="checkbox" name="test" /></td>
-               <td>Package1</td>
-               <td>0.1</td>
-               <td>0.2</td>
+               <td>blog_create_post</td>
+               <td><small>2013-06-02 00:00:00</small></td>
                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</td>
              </tr>
              <tr>
                <td><input type="checkbox" name="test" /></td>
-               <td>Package2</td>
-               <td>0.2</td>
-               <td>0.2</td>
+               <td>user_register</td>
+               <td><small>2013-06-02 00:00:00</small></td>
                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</td>
              </tr>
              <tr>
                <td><input type="checkbox" name="test" /></td>
-               <td>Package3</td>
-               <td>0.1</td>
-               <td>0.1.1</td>
+               <td>polls_vote</td>
+               <td><small>2013-06-02 00:00:00</small></td>
                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</td>
              </tr>
             </tbody>
           </table>
+</div>
+<div class="span12" align="right">
+<div class="btn-group dropup" align="left">
+    <button class="btn">Groups</button>
+    <button class="btn dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+	<li><a href="#">Anonymous</a></li>
+	<li><a href="#">Users</a></li>
+	<li><a href="#">Editor</a></li>
+    </ul>
     </div>
-
-    </div>
-    </div>
-    <div class="row-fluid" align="right">
-	<div class="span11">
-<div class="btn-group" align="left">
-                <button data-toggle="dropdown" class="btn btn-small dropdown-toggle">Selected <span class="caret"></span></button>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Install selected</a></li>
-                  <li><a href="#">Remove selected</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="alert-error"><a href="#">Purge selected</a></li>
-                </ul>
-              </div>
+						</div>
+					</div> 
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid" align="center">
+			<div class="span12">This program is Free Software</div>
+		</div>
 	</div>
-    </div>
-    <div class="row-fluid" align="center">
-	<div class="span12">This program is Free Software</div>
-    </div>
-
+</div>
 
     <!-- Le javascript
     ================================================== -->

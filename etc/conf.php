@@ -79,4 +79,6 @@ define("BURA_MODELS_DIR", BURA_SOURCE_DIR."models");
  */
 define("BURA_DEFAULT_TEMPLATE", "aficionado");
 
+define("BURA_DEFAULT_TOKEN_TIME", 60*60*2); // Default token session time = two hours
+
 ?>

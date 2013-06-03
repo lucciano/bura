@@ -89,6 +89,12 @@ require_once BURA_LIB_DIR.'appman.lib.php';
 $appman = new Appman;
 
 /*
+ * Load security class
+ */
+require_once BURA_LIB_DIR.'security.lib.php';
+$security = new Security;
+
+/*
  * Small test to require a package dependences
  */
 /*require_once BURA_LIB_DIR.'package.lib.php';

@@ -10,6 +10,8 @@ TODO:
 	- {if} [OK]
 	- {for}
 	- {foreach}
+	- {sidebar}
+		- {widget}
 
 
 - pacman.lib.php

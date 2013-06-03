@@ -17,7 +17,7 @@ class Security{
 	 * Coded by Ciro Pedrini
 	 * https://github.com/CPedrini/Delos/blob/master/system/core/Security.php
 	 */
-	function generateToken($name='default', $exp=60){
+	function generateToken($name='default', $exp=BURA_DEFAULT_TOKEN_TIME){
 		$token = md5(uniqid(microtime(), true));
 		$_SESSION['tokens'][$name.'_token'] = array('token' => $token, 'time' => time() + $exp);
 		return $token;

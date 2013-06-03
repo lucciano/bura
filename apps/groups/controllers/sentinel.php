@@ -20,6 +20,16 @@ class GroupsDaemon{
 	function removeVisitor($token){
 
 	}
+
+	// Tokens should be stored on the DB
+	function checkToken($token,$time,$ip=$_SERVER['REMOTE_ADDR']){
+
+	}
+
+	// This function should check all tokens and remove those who expired
+	function purgeTokens(){
+
+	}
 }
 
 ?>

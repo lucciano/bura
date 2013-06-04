@@ -1,8 +1,8 @@
 <?php
 
 	$extra_libs = array(
-		"GroupsDaemon" => "sentinel.php",
-		"GroupsManagement" => "groups.lib.php"
+		"GroupsManagement" => "groups.lib.php",
+		"GroupsDaemon" => "sentinel.php"
 	); 
 
 

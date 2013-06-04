@@ -2,6 +2,8 @@
 
 class GroupsDaemon{
 	function __construct(){
+		$this->addDefaultGroup();
+		$this->checkSection();
 	}
 
 	function addDefaultGroup(){
@@ -15,8 +17,8 @@ class GroupsDaemon{
 	}
 
 	function checkSection(){
-		global $groups,$current_group;
-		if(!$groups->hasPrivilegies('app_'.$current_app.'_main',$current_group)){
+		global $GroupsManagement,$current_app;
+		if(!$GroupsManagement->hasPrivilegies('app_'.$current_app.'_main',$_SESSION['current_group'])){
 			die(_("You have no privilegies to see this section."));
 		}
 

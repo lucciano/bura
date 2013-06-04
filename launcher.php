@@ -153,4 +153,7 @@ $app = $appman->loadApp($current_app);
 $db->close();
 // This should be always the last action in this file
 echo $skeleton;
+
+// Primitive debugging
+echo var_dump($_REQUEST);
 ?>

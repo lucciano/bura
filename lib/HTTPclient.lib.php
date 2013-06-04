@@ -10,6 +10,9 @@
 *	@author		Sergio Milardovich <smilardovich@frro.utn.edu.ar>
 */
 
+if (!defined("BURA_BLOWS"))
+	die("Bura isn't blowing! ¬¬");
+
 /*
  * This is an abstract class with generic functions to interact with cURL
  */

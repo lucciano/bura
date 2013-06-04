@@ -11,6 +11,9 @@ abstract class Ftp{
 
 } */
 
+if (!defined("BURA_BLOWS"))
+	die("Bura isn't blowing! ¬¬");
+
 $link = ftp_connect("ftp://ftp.milardovich.com.ar") or die("ERROR");
 //ftp_nlist($link,"./");
 

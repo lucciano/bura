@@ -9,6 +9,10 @@
 *	@license	http://www.gnu.org/copyleft/gpl.html GNU/GPL License 2.0
 *	@author		Sergio Milardovich <smilardovich@frro.utn.edu.ar>
 */
+
+if (!defined("BURA_BLOWS"))
+	die("Bura isn't blowing! ¬¬");
+
 class Validate{
 	function isEmail($email){
 		if(preg_match("/^[a-zA-Z0-9\.\-\_]*@[a-zA-Z0-9\.\-\_]*$/", $email, $matches)){

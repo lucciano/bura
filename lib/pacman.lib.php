@@ -11,6 +11,9 @@
 *	@author		Sergio Milardovich <smilardovich@frro.utn.edu.ar>
 */
 
+if (!defined("BURA_BLOWS"))
+	die("Bura isn't blowing! ¬¬");
+
 class Pacman{
 
 	var $curl_handler;

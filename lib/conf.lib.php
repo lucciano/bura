@@ -12,6 +12,9 @@
 *	@author		Sergio Milardovich <smilardovich@frro.utn.edu.ar>
 */
 
+if (!defined("BURA_BLOWS"))
+	die("Bura isn't blowing! ¬¬");
+
 class Conf{
 	function getOption($name,&$output=false){
 		global $db;

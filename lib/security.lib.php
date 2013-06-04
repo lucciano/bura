@@ -46,6 +46,10 @@ class Security{
 	 */
 	function checkTokens(){
 	}
+
+	function removeToken($name){
+		unset($_SESSION['tokens'][$name.'_token']);
+	}
 }
 
 ?>
